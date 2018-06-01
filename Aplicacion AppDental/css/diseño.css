@@ -1,0 +1,547 @@
+#md{
+    color: crimson; 
+}
+#modita{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    color: crimson;
+    background: white;
+    border-style: none;
+    outline: 0px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+#crear{
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    color: crimson;
+    background: white;
+    border-style: none;
+    outline: 0px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translate(0%,-50%);
+
+}
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    margin: 45px;     width: 80%; text-align: left;    border-collapse: collapse; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+
+#trata2{
+    transform: translate(50%,50%);
+    border: 2px solid red;
+ float: left;
+ width: 900px;
+ margin: 10px;
+background-color: rgb(123,45,103,.3);
+padding-top: 40px;    
+}
+#trata{
+    border: 2px solid red;
+ float: left;
+ width: 900px;
+ margin: 10px;
+background-color: rgb(123,45,103,.3);
+padding-top: 40px;    
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    background-image: url(../img/back.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Agrupacion*/
+#agrupar {  
+width:auto;  
+} /* Fin de Agrupacion*/
+
+
+/* Titulo*/
+#cabecera {
+color: darkred;
+border: 5px solid silver;
+padding: 20px;
+
+}
+.tit{
+  margin-left: 20%;
+  font: bold 40px verdana, sans-serif; 
+}
+.tit2{
+  font: bold 30px verdana, sans-serif;
+  margin-left: 35%;
+}
+h1{
+
+ font: bold 18px verdana, sans-serif;
+
+}
+h2 {
+ font: bold 14px verdana, sans-serif;
+}
+
+
+header{
+width: auto;
+height: 65px;
+}
+/* Fin de Titulo*/
+
+
+/* Menu Izquierdo de navegacion*/
+#menu {
+float: left;
+//background: rgba(0,0,255,0.2);
+padding: 5px auto;
+padding-bottom: 35%;
+
+}
+#menu li {
+display: block;
+ list-style: none;
+ padding: 20px;
+ font: bold 14px verdana, sans-serif;
+}
+ul#listaMenu1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* y podemos agregar propiedades para las fuentes de los textos */
+}
+/* cada item de la lista */
+ul#listaMenu1 li {
+  /* las muestro abajo de cada una */
+  display: list-item;
+}
+/*  defino los enlaces como bloques que floten; de ese modo,*/
+li a#inicio {
+  display: block; /* rectangulo XD */
+  float: left; /* son bloques  */
+  text-align: center; /* centramos el texto */
+  text-decoration: none; /* para que no se subrayen los enlaces */
+  margin-right: 2px; /* separo los menus */
+  margin-bottom: 40px;
+  /*Tamaño*/
+        height: 20px;
+        line-height: 20px;
+        width: 120px;
+  /* colores y los bordes */
+  background: aqua;	
+  color: firebrick;
+  border-top: 2px solid gray;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 10px solid white;
+  }
+ul li a {
+  font-size: 15px;
+    font-style: italic;
+    display: block; /* rectangulo XD */
+  float: left; /* son bloques flotantes  */
+  text-align: center; /* centramos el texto */
+  text-decoration: none; /* para que no se subrayen los enlaces */
+  margin-right: 2px; /* separo los menus */
+  margin-bottom: 40px;
+  /*Tamaño*/
+        height: 20px;
+        line-height: 20px;
+        width: 120px;
+  /* colores y los bordes */
+  background-color: floralwhite;
+  border-top: 2px solid gray;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 10px solid aqua;
+  color: firebrick;
+
+}
+ul#listaMenu1 li a:hover {
+  background-color: darkorchid;
+  color: blanchedalmond;
+  border-top: 2px solid #815444;
+  border-right: 2px solid #C59888;
+  border-bottom: 2px solid #C59888;
+  border-left: 10px solid ;
+}
+/* Fin del Menu Izquierdo de navegacion*/
+
+
+/* Menu Derecho de navegacion*/
+#menu2 {
+  float: left;
+//background: rgba(0,0,255,0.2);
+padding: 5px auto;
+transform: translate(90%, 30%);    
+}
+#menu2 li {
+  display: block;
+ list-style: none;
+ padding: 20px;
+ font: bold 14px verdana, sans-serif;
+}
+ul#listaMenu2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* y podemos agregar propiedades para las fuentes de los textos */
+}
+/* cada item de la lista */
+ul#listaMenu2 li {
+  /* las muestro abajo de cada una */
+  display: list-item;
+}
+/*  defino los enlaces como bloques que floten; de ese modo,*/
+ul#listaMenu2 li a:hover {
+ background-color: darkorchid;
+  color: blanchedalmond;
+  border-top: 2px solid #815444;
+  border-right: 2px solid #C59888;
+  border-bottom: 2px solid #C59888;
+  border-left: 10px solid;
+}
+/* Fin del Menu Derecho de navegacion*/
+
+
+/* Inicio del seccion de la informacion*/
+#seccion {
+ float: left;
+ width: 900px;
+ height: 900px;
+ margin: 10px;
+background-color: rgb(123,45,103,.3);
+    
+}
+#img{
+    width: 40%;
+	margin-top: 40px;
+	margin-left: 30%;
+	margin-bottom: 30px;
+  border-radius: 50%;
+ 
+}
+#img2{
+    width: 40%;
+	margin-top: 40px;
+	margin-left: 30%;
+	margin-bottom: 30px;
+  border-radius: 50%;
+ 
+}
+
+/* Fin del inicio de la informacion*/
+
+
+
+/*Inicio de aside de redes sociales*/
+#columna2 {
+ float: right;
+ width: 150px;
+transform: translate(0%, 200%);    
+
+}
+.img {    
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius:200%;   
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+
+
+/*Fin de aside redes sociales*/
+
+
+/*Pie de Pagina*/
+#pie {  
+clear: both; 
+text-align: center;   
+padding: 20px; 
+border-top: 3px solid black; 
+color: firebrick;
+    font-size: 22px;
+} 
+/* Fin de Pie de Pagina*/
+
+/*inicio de login*/
+#seccion2
+{
+	float: left;
+	
+	width: 900px;
+    height: 675px;
+}
+
+/* Login de acceso*/
+.container-form{
+    width: 100%;
+    max-width: 500px;
+    background: black;
+    position: relative;
+    top: 170%;
+    left: 22%;
+    transform: translate(30%, -0%);
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: #0FA0B1; 
+	display: inline-flex;
+}
+
+.logo-title{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo-title img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-title h2{
+    margin-left: 10px;
+    margin-top: 8px;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+
+.menu li{
+    list-style: none;
+    padding: 30px;
+    padding-bottom: 27px;
+}
+
+
+.menu li:hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+a{
+    color: white;	
+  text-decoration: none;
+}
+#textboton{
+	color: black;
+	margin-left: 100px;
+	margin-right: 100px;
+    font-size: 20px;
+}	
+
+.line-input{
+    max-width: 350px;
+    display: flex;
+    border-bottom: 2px solid white;
+    margin: auto;
+    margin-top: 40px;
+    padding: 6px;
+}
+
+.line-input input{
+    border-style: none;
+    outline: 0px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.line-input label{
+    font-size: 20px;
+    color: red;
+}
+
+.form button{
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    background: white;
+    border-style: none;
+    outline: 0px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.form button:hover{
+    opacity: .2;
+}
+
+.form button label{
+    position: relative;
+    left: 50px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.mensaje{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding: 6px;
+    color: red;
+}
+
+.active{
+    border-bottom: 4px solid #11959C;;
+}
+
+input {
+background: black;
+color: white;
+}
+
+
+
+.form{
+    width: 100%;
+}
+.form .welcome-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.form .welcome-form h1{
+    font-weight: 300;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.form .welcome-form h2{
+    font-size: 34px;
+    margin-left: 10px;
+    margin-top: -4px;
+    font-weight: bold;
+    color: #5584FF;
+}
+
+
+#textcolor{
+	color: white;
+ 
+}
+
+#textcolor2{
+	color: white;
+	
+}
+/* Fin de Login de acceso*/
+
+
+/*Error de usuario y contraseña*/
+#Error{
+    transform: translate(-300%,200%);
+    
+}
+#error{
+    width: 300%;
+    color: red;
+    font-size: 16px;
+}
+
+
+/*Fin de Error de usuario y contraseña*/
+
+#tit{
+    
+    margin-left: 20px;
+    
+    
+}
+#informacion{
+     position: absolute;
+    transform: translate(-350%,200%);
+}
+
+#picture{
+    margin-left: 20px;
+     position: absolute;
+    transform: translate(0%,-500%);
+}
+
+
+
+textarea{
+    
+background-color: dodgerblue;
+  display: block; 
+  width: 100%; 
+  padding: 14px 20px; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+border : solid 1px #ff0000;
+            color : #ffffff;
+            padding : 4px;
+            width : 700px;
+            height : 200px;
+            overflow : auto;
+margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+#mover{
+    position: absolute;
+    transform: translate(6%,-300%);
+    background-color: dodgerblue;    
+}
+
+#cargar{
+    color: white;
+    position: absolute;
+    transform: translate(50%,-150%);
+    background-color: dodgerblue;
+    border: 1px solid aqua;
+}
+
+#tit2{
+    background-color: dodgerblue;
+}
+/*formulario para adminstrador */
+
+
+/*fin de formulario para admi
+
+
+

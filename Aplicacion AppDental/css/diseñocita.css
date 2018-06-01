@@ -1,0 +1,121 @@
+#seccion2 {
+    
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 800px;
+    height: 850px;
+    
+}
+#titulocita:hover{
+    font-size: 300%;
+    color: aqua;
+}
+
+h5{
+    font-size: 300%;
+    color: white;
+}
+#cita{
+    text-align: center;
+    background-color: rgb(20,20,20,0.7);
+    
+}
+#label1{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    margin-top: 50px;
+    display: block
+}
+#label2{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    margin-top: 50px;
+    display: block
+}
+#label3{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    margin-top: 50px;
+    display: block
+}
+#label4{
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    margin-top: 50px;
+    display: block
+}
+#input1,placeholder{
+    color: white;
+    border: 1px solid aqua;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(0,0,0,0);
+}
+#input2{
+    border: 1px solid aqua;
+    width: 200px;
+    height: 30px;
+    text-align: right;
+    margin-top: 20px;
+    background-color: rgb(0,0,0,0);
+}
+#input3{
+    border: 1px solid aqua;
+    width: 200px;
+    height: 30px;
+    text-align: right;
+    margin-top: 20px;
+    background-color: rgb(0,0,0,0);
+}
+#select1{
+    border: 1px solid aqua;
+    width: 200px;
+    height: 30px;    
+    margin-top: 20px;
+    
+}
+select{
+    color: aqua;
+    cursor: pointer;
+    background-color: rgb(0,0,0,0);
+}
+option{
+    background-color: crimson;
+    
+}
+select:hover{
+    cursor:pointer ;
+    background-color: firebrick;
+}
+#buttonXD{
+    border-radius: 100px;
+    border: 1px solid aqua;
+    width: 120px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgb(0,0,0,0);
+    color: aqua;
+    margin-top: 40px;
+    transform: translate(-70%,0%);
+}
+#buttonXC{
+    border-radius: 100px;
+    border: 1px solid aqua;
+    width: 120px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgb(0,0,0,0);
+    color: aqua;
+    transform: translate(70%,-100%);
+}
+
