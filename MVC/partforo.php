@@ -6,8 +6,7 @@
 ?>
     <?php
     if(isset($_POST['reply'])) {
-        $query = pg_query($con,"INSERT INTO foro (pregunta,reply,usuario) VALUES ('".$_POST['comentario']."','".$_SESSION['id']."',
-            '".$_SESSION['id']."');");   
+        $query = pg_query($con,"INSERT INTO foro (pregunta,usuario,reply) VALUES ('".$_POST['comentario']."','".$_SESSION['id']."','".$_GET['id']."');");   
         if($query) { header("Location: Foro.php"); }
     }
 ?>

@@ -1,5 +1,4 @@
 <?php 
-include_once("Modelo/Usuario.php");
 include_once("Modelo/ClientesDental.php");
 $sErr=""; 
 $oPersHosp = new ClientesDental();
@@ -38,9 +37,10 @@ $oPersHosp = new ClientesDental();
 	<div id="noticias">
        <?php 
         if(isset($_REQUEST["id"])){
-        $a=$_REQUEST["id"];
-        $_SESSION['idN']=$a;
-        $oPersHosp->setIdN($a);
+        $pap=$_REQUEST["id"];
+        session_start();
+        $_SESSION['IDNO']=$pap;
+        $oPersHosp->setIdN($pap);
         $oPersHosp->buscar2();
         ?>
 	<form action="procesandodatos.php" method="post" enctype="multipart/form-data">
@@ -48,8 +48,9 @@ $oPersHosp = new ClientesDental();
          <input id="tit2" type="tetx" name="titulo" value="<?php echo $oPersHosp->getTitulo(); ?>">
          <label id="informacion">Informacion</label>
 	     <textarea id="todo" name="noticia"><?php echo $oPersHosp->getNoticia(); ?></textarea>
+       <input type="hidden" name="txtOpe" value="<?php echo $pap;?>">
 	     <label id="picture">Imagen</label>
-	     <input id="mover"type="file" name="img_up">
+	     <input id="mover" type="file" name="img_up">
         <input id="cargar" value="Subir" type="submit" name="modificar">
 	</form>
 	</div>

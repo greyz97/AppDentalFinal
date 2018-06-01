@@ -1,5 +1,6 @@
 <?php
 include_once("pag/conexion.php");
+include_once("Modelo/Usuario.php");
 include_once("Modelo/ClientesDental.php");
 $sErr=""; 
 $oPersHosp = new ClientesDental();
@@ -63,30 +64,31 @@ $tmp_name = $_FILES['img_up']["tmp_name"];
 $name = $_FILES['img_up']["name"];
 $nuevo_path="img/".$name;
     $ori="../img/".$name;
+    $_SESSION['imgN']=$ori;
 move_uploaded_file($tmp_name,$nuevo_path);
-    $id=$_SESSION["idN"];
-                $oPersHosp->setIdN($id);
-                $oPersHosp->setTitulo($_POST["titulo"]);
+$ids=$_SESSION['IDNO'];
+				$oPersHosp->setIdN($ids);
+				$oPersHosp->setTitulo($_POST["titulo"]);
 				$oPersHosp->setNoticia($_POST["noticia"]);
 				$oPersHosp->setImagen($ori);
 				$oPersHosp->modificarnoticia();
-     header("Location: pag/Noticias.php"); 
+           header("Location: pag/Noticias.php"); 
 	}
-
 if(isset($_POST['modificar2'])){
 $type=$_FILES['img_up']['type'];
 $tmp_name = $_FILES['img_up']["tmp_name"];
 $name = $_FILES['img_up']["name"];
 $nuevo_path="img/".$name;
     $ori="../img/".$name;
+    $_SESSION['imgT']=$ori;
 move_uploaded_file($tmp_name,$nuevo_path);
-    $id=$_SESSION['id2'];
-                $oPersHosp->setIdT($id);
+    $idta=$_SESSION['IDNO'];;
+                $oPersHosp->setIdT($idta);
                 $oPersHosp->setTitulo($_POST["titulo"]);
 				$oPersHosp->setTratamiento($_POST["tratamiento"]);
 				$oPersHosp->setImagen($ori);
 				$oPersHosp->modificartratamiento();
-     header("Location: pag/Tratamientos.php"); 
+     			header("Location: pag/Tratamientos.php");         
 	}
 
 if(isset($_REQUEST["id"])){
@@ -101,6 +103,5 @@ if(isset($_REQUEST["id2"])){
 	$oPersHosp->borrar2();
 	header("Location: pag/Tratamientos.php"); 
 }
-
 exit();
 ?>

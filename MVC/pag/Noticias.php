@@ -60,7 +60,7 @@ $arrPersHosp=null;
         <td><?php echo $oPersHosp->getTitulo(); ?></td>
     <td><?php echo $oPersHosp->getNoticia(); ?></td>
         <td><img src="<?php echo $oPersHosp->getImagen(); ?>" width="200px"></td>
-        <?php echo "<td><a id='md' href='../modificarnoticias.php?id=".$oPersHosp->getIdN()."'>Editar</a><br><a id='md' href='../procesandodatos.php?id=".$oPersHosp->getIdN()."'>Eliminar</a></td>" ;?>
+        <?php echo "<td><a id='md' href='../modificarnoticias.php?id=".$oPersHosp->getIdN()."'>Editar</a><br><a id='md' href='../procesandodatos.php?id=".$oPersHosp->getIdN()."'>Eliminar</a></td>" ?>
         </tr>
     
 	

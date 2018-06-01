@@ -1,4 +1,5 @@
     <?php
+
 include_once("AccesoDatos.php");
 include_once("Usuario.php");
 class ClientesDental extends Usuario{	
@@ -98,21 +99,27 @@ class ClientesDental extends Usuario{
 	$oAccesoDatos=new AccesoDatos();
 	$sQuery="";
 	$nAfectados=-1;
+	echo $_SESSION['IDNO'];
+	echo $_POST['noticia'];
+	echo $_POST['titulo'];
+	echo $_SESSION['imgN'];
+
 		if ($this->Titulo == "" OR $this->Noticia == "" OR 
-		    $this->Imagen == "" OR $this->IdN == "" )
+		    $this->Imagen == "")
 			throw new Exception("ClientesDental->modificarnoticia(): faltan datos");
 		else{
 			if ($oAccesoDatos->conectar()){
 		 		$sQuery = "UPDATE noticias 
 					SET titulo= '".$this->Titulo."' , 
 					noticia= '".$this->Noticia."' , 
-					imagen = ".$this->Imagen."
-					WHERE id_noticia = ".$this->IdN;
+					imagen = '".$this->Imagen."'
+					WHERE id_noticia = '".$this->IdN."' ";
 				$nAfectados = $oAccesoDatos->ejecutarComando($sQuery);
 				$oAccesoDatos->desconectar();
 			}
 		}
 		return $nAfectados;
+     
 	}
 	function modificartratamiento(){
 	$oAccesoDatos=new AccesoDatos();
@@ -123,8 +130,12 @@ class ClientesDental extends Usuario{
 			throw new Exception("ClientesDental->modificartratamiento(): faltan datos");
 		else{
 			if ($oAccesoDatos->conectar()){
-		 		$sQuery ="UPDATE tratamientos SET titulo='".$this->Titulo."', tratamiento= '".$this->Tratamiento."', imagen='".$this->Imagen."' WHERE id_tratamiento='".$this->IdT."' ";
-				$nAfectados = $oAccesoDatos->ejecutarComando($sQuery);
+		 		$sQuery = "UPDATE tratamientos 
+					SET titulo= '".$this->Titulo."' , 
+					tratamiento= '".$this->Tratamiento."' , 
+					imagen = '".$this->Imagen."'
+					WHERE id_tratamiento = '".$this->IdT."' ";
+					$nAfectados = $oAccesoDatos->ejecutarComando($sQuery);
 				$oAccesoDatos->desconectar();
 			}
 		}
@@ -141,7 +152,7 @@ class ClientesDental extends Usuario{
 		if ($oAccesoDatos->conectar()){
 		 	$sQuery = "SELECT id_noticia,titulo, noticia, imagen 
 				FROM noticias 
-				ORDER BY id_noticia";
+			ORDER BY id_noticia";
 			$arrRS = $oAccesoDatos->ejecutarConsulta($sQuery);
 			$oAccesoDatos->desconectar();
 			if ($arrRS){

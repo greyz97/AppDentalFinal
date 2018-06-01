@@ -40,7 +40,8 @@ $arrPersHosp=null;
         <?php 
         if(isset($_REQUEST["id2"])){
         $a=$_REQUEST["id2"];
-        $_SESSION['id2']=$a;
+        session_start();
+        $_SESSION['IDNO']=$a;
         $oPersHosp->setIdT($a);
         $oPersHosp->buscar();
         ?>
